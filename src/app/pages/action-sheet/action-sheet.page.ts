@@ -11,5 +11,32 @@ export class ActionSheetPage implements OnInit {
 
   ngOnInit() {
   }
+  onClick(){
+  }
 
+  public actionSheetButtons = [
+            {
+            text: 'Borrar',
+            role: 'destructive',
+            icon:'trash-outline',
+            data: {
+              action: 'delete',
+            },
+          },
+          {
+            text: 'Compartir',
+            icon:'share-outline',
+            data: {
+              action: 'share',
+            },
+          },
+          {
+            text: 'Cancelar',
+            icon:'close-outline',
+            role: 'cancel',
+            data: {
+              action: 'cancel',
+            },
+          },
+        ]
 }
